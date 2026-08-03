@@ -96,3 +96,25 @@ Quando esse erro aparecer, verificar primeiro:
 - fechamento de aspas simples (')
 - fechamento de docstrings (""")
 
+
+Problema
+        ↓
+Quero aumentar o orçamento.
+
+Dados
+        ↓
+monthly_budget
+budget_increase
+
+Operação
+        ↓
++
+
+Resultado
+        ↓
+new_budget
+
+Exibição
+        ↓
+print()
+

@@ -34,7 +34,8 @@ cost_per_conversion = daily_budget / conversions
 monthly_budget = 3000.00
 spent = 1845.00
 remaining_budget = monthly_budget - spent
-
+budget_increase = 500.00
+new_budget = monthly_budget + budget_increase
 
 print("=" * 50)
 print("MARKETING DATA LAB")
@@ -60,5 +61,7 @@ print("=" * 50)
 print(f"{'Orçamento Mensal':.<20} R$ {monthly_budget:.2f}")
 print(f"{'Valor Gasto':.<20} R$ {spent:.2f}")
 print(f"{'Saldo Restante':.<20} R$ {remaining_budget:.2f}")
+print(f"{'Aumento':.<20} R$ {budget_increase:.2f}")
+print(f"{'Novo Orçamento':.<20} R$ {new_budget:.2f}")
 
 
