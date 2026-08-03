@@ -20,8 +20,15 @@ conversions = 8
 
 active_campaign = "Ativa"
 
-# Calculo das Métricas 
+campaign_days = 20 
 
+total_leads = 1250
+
+leads_per_week = 100
+
+# ========================================================
+# Cálculo das Métricas 
+# ========================================================
 
 # Indicadores de Desempenho 
 
@@ -36,6 +43,13 @@ spent = 1845.00
 remaining_budget = monthly_budget - spent
 budget_increase = 500.00
 new_budget = monthly_budget + budget_increase
+total_budget = daily_budget * campaign_days
+
+# Distribuição de Leads 
+
+complete_weeks = total_leads // leads_per_week
+remaining_leads = total_leads % leads_per_week
+weeks_needed = total_leads / leads_per_week
 
 print("=" * 50)
 print("MARKETING DATA LAB")
@@ -54,6 +68,15 @@ print(f"{'CPC':.<20} R$ {cpc:.2f}")
 print(f"{'Taxa Conversão':.<20} {conversion_rate:.2f}%")
 print(f"{'Custo/Conversão':.<20} R$ {cost_per_conversion:.2f}")
 
+if cpc <= 1:
+    print(f"{'Análise':.<20} Excelente CPC")
+
+elif cpc <= 2:
+    print(f"{'Análise':.<20} CPC Aceitável") 
+
+else: 
+    print(f"{'Análise':.<20} CPC Elevado")
+
 print("=" * 50)
 print("CONTROLE ORÇAMENTÁRIO")
 print("=" * 50)
@@ -63,5 +86,17 @@ print(f"{'Valor Gasto':.<20} R$ {spent:.2f}")
 print(f"{'Saldo Restante':.<20} R$ {remaining_budget:.2f}")
 print(f"{'Aumento':.<20} R$ {budget_increase:.2f}")
 print(f"{'Novo Orçamento':.<20} R$ {new_budget:.2f}")
+print(f"{'Dias da Campanha':.<20} {campaign_days}")
+print(f"{'Orçamento Total':.<20} R$ {total_budget:.2f}")
+
+print("=" * 50)
+print("PLANEJAMENTO COMERCIAL")
+print("=" * 50)
+
+print(f"{'Leads Totais':.<20} {total_leads}")
+print(f"{'Leads/Semana':.<20} {leads_per_week}")
+print(f"{'Semanas (Média)':.<20} {weeks_needed:.2f}")
+print(f"{'Semanas Completas':.<20} {complete_weeks}")
+print(f"{'Leads Restantes':.<20} {remaining_leads}")
 
 

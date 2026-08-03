@@ -1,120 +1,101 @@
-# Sprint 1 - Fundamentos do Python
+# Sprint 1 — Fundamentos do Python Aplicados ao Marketing
 
-## Missão 1 - Variáveis e Tipos de Dados
+## Objetivo
 
-### Objetivo
+Aprender os fundamentos da linguagem Python aplicando os conceitos em problemas reais de Marketing Digital.
 
-Construir o primeiro programa do Marketing Data Lab registrando informações de uma campanha de marketing.
+---
 
-### Conceitos estudados
+# Missão 1 — Variáveis e Tipos de Dados
+
+## Conteúdos
 
 - Variáveis
-- Tipos de dados (`str`, `int`, `float` e `bool`)
-- Função `print()`
+- Tipos de Dados
+- print()
 - f-strings
-- Formatação de texto
-- Formatação de valores monetários (`:.2f`)
-- Alinhamento de colunas (`:.<20`)
+- Formatação de relatórios
 
-### Aplicação prática
+## Projeto desenvolvido
 
-Desenvolvimento de um relatório de campanha contendo:
+Relatório de uma campanha de marketing contendo:
 
-- Nome da campanha
+- Campanha
 - Plataforma
-- Orçamento diário
+- Orçamento Diário
 - Cliques
 - Conversões
 - Status
 
-### Aprendizados
+## Aprendizados
 
-- O tipo de um dado depende do seu significado, não apenas da sua aparência.
-- Um código de produto pode ser uma `string`.
-- Variáveis devem possuir nomes claros e descritivos.
-- A apresentação dos dados também faz parte da qualidade do software.
+- Diferença entre `str`, `int`, `float` e `bool`.
+- Importância de utilizar nomes descritivos para variáveis.
+- Organização da saída utilizando f-strings.
 
 ---
 
-# Missão 2 - Operadores e Métricas
+# Missão 2 — Operadores Matemáticos
 
-### Objetivo
+## Conteúdos
 
-Transformar dados da campanha em indicadores de desempenho.
+- Soma (`+`)
+- Subtração (`-`)
+- Multiplicação (`*`)
+- Divisão (`/`)
+- Divisão Inteira (`//`)
+- Resto da Divisão (`%`)
 
-### Métricas implementadas
+## Funcionalidades implementadas
 
-- CPC (Custo por Clique)
+### Indicadores de Desempenho
+
+- CPC
 - Taxa de Conversão
 - Custo por Conversão
 
-### Fórmulas
+### Controle Orçamentário
 
-```python
-cpc = daily_budget / clicks
+- Saldo Restante
+- Novo Orçamento
+- Orçamento Total
 
-conversion_rate = (conversions / clicks) * 100
+### Planejamento Comercial
 
-cost_per_conversion = daily_budget / conversions
-```
+- Semanas Necessárias
+- Semanas Completas
+- Leads Restantes
 
-### Conceitos estudados
+## Aprendizados
 
-- Operador de divisão (`/`)
-- Operador de multiplicação (`*`)
-- Uso de variáveis em cálculos
-- Reutilização de resultados
-- Formatação de números (`:.2f`)
+- Operadores resolvem problemas de negócio.
+- Alterar uma variável atualiza todos os cálculos automaticamente.
+- Organização do código em blocos facilita a manutenção.
 
-### Próximos desafios
+---
 
-- Operadores matemáticos restantes
-- Tratamento de divisão por zero
-- Estruturas condicionais (`if`)
-- Comparação entre campanhas
+# Erros Encontrados
 
+## String literal is unterminated
 
-## Diário de Bordo
+### Causa
 
-Nesta sprint ficou claro que aprender através de um projeto faz muito mais sentido do que apenas assistir a vídeos.
+Docstring (`"""`) não encerrada.
 
-Os conceitos de variáveis e tipos de dados foram assimilados com facilidade porque foram aplicados em um cenário real de Marketing.
+### Solução
 
-Também ficou evidente a importância de organizar o código desde o início, utilizando Git, documentação e commits pequenos.
+Verificar:
 
-## Erros encontrados
+- aspas (`"`)
+- aspas simples (`'`)
+- docstrings (`"""`)
 
-### String literal is unterminated
+---
 
-Causa:
-A docstring (`"""`) não havia sido fechada.
+# Diário de Bordo
 
-Aprendizado:
-Quando esse erro aparecer, verificar primeiro:
+Nesta sprint foi construída a base do Marketing Data Lab.
 
-- fechamento de aspas (")
-- fechamento de aspas simples (')
-- fechamento de docstrings (""")
+Além dos fundamentos da linguagem, o projeto passou a possuir uma estrutura organizada, utilizando Git, GitHub, documentação e commits frequentes.
 
-
-Problema
-        ↓
-Quero aumentar o orçamento.
-
-Dados
-        ↓
-monthly_budget
-budget_increase
-
-Operação
-        ↓
-+
-
-Resultado
-        ↓
-new_budget
-
-Exibição
-        ↓
-print()
-
+O aprendizado ocorreu por meio da resolução de problemas reais de Marketing, tornando os conceitos mais fáceis de compreender e aplicar.
