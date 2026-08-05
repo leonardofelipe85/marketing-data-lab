@@ -36,6 +36,20 @@ cpc = daily_budget / clicks
 conversion_rate = (conversions / clicks) * 100
 cost_per_conversion = daily_budget / conversions
 
+if conversion_rate >= 5:
+    situacao = "Excelente"
+
+elif conversion_rate >=3: 
+    situacao = "Aceitável"
+
+else: 
+    situacao = "Baixa"
+
+
+
+
+
+
 # Controle de Orçamento 
 
 monthly_budget = 3000.00
@@ -44,6 +58,16 @@ remaining_budget = monthly_budget - spent
 budget_increase = 500.00
 new_budget = monthly_budget + budget_increase
 total_budget = daily_budget * campaign_days
+
+if conversion_rate >= 5 and cpc <= 1.50 and remaining_budget > 500:
+    campaign_health = ("Campanha Saudável")
+else:
+    campaign_health = ("Necessita otimização")
+
+if conversion_rate >= 5 or remaining_budget >= 1000:
+    campaign_status =("Campanha pode continuar")
+else:
+   campaign_status = ("Reavaliar campanha")
 
 # Distribuição de Leads 
 
@@ -61,6 +85,7 @@ print(f"{'Orçamento Diário':.<20} R$ {daily_budget:.2f}")
 print(f"{'Cliques':.<20} {clicks}")
 print(f"{'Conversões':.<20} {conversions}")
 print(f"{'Status':.<20} {active_campaign}")
+print(f"{'Status Geral':.<20} {campaign_status}")
 
 print("=" * 50)  # Separador entre os dados e as métricas
 
@@ -88,6 +113,7 @@ print(f"{'Aumento':.<20} R$ {budget_increase:.2f}")
 print(f"{'Novo Orçamento':.<20} R$ {new_budget:.2f}")
 print(f"{'Dias da Campanha':.<20} {campaign_days}")
 print(f"{'Orçamento Total':.<20} R$ {total_budget:.2f}")
+print(f"{'Diagnóstico':.<20} {campaign_health}")
 
 print("=" * 50)
 print("PLANEJAMENTO COMERCIAL")

@@ -45,7 +45,7 @@ marketing-data-lab/
 
 - [x] Sprint 0 — Ambiente Profissional
 - [x] Sprint 1 — Fundamentos do Python
-- [ ] Sprint 2 — Estruturas Condicionais
+- [x] Sprint 2 — Estruturas Condicionais
 - [ ] Sprint 3 — Estruturas de Repetição
 - [ ] Sprint 4 — Funções
 - [ ] Sprint 5 — Manipulação de Arquivos
@@ -64,4 +64,14 @@ A evolução do projeto é registrada na pasta `docs`.
 
 ---
 
-**Projeto em desenvolvimento.**
+**Projeto ## Sprint 1 - Missão 2
+
+Nesta etapa foram desenvolvidos:
+
+- Registro de informações de campanhas
+- Cálculo de indicadores (CPC, CPA e Taxa de Conversão)
+- Controle orçamentário
+- Planejamento comercial
+- Estruturas condicionais (`if`, `elif`, `else`)
+- Operadores lógicos (`and`, `or`)
+- Geração de relatório formatado no terminalem desenvolvimento.**
