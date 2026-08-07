@@ -20,3 +20,8 @@ apresentando as principais métricas de desempenho.
 # - CTR
 # - CPC
 # - Investimento
+
+Qual problema o projeto resolve?
+Qual o objetivo da Versão 1?
+Quais informações cada campanha possui?
+Quais funcionalidades ainda serão adicionadas nas próximas versões?
