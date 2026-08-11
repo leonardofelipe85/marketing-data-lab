@@ -1,0 +1,32 @@
+[
+    {
+        "nome": "Pesquisa - Marca",
+        "tipo": "Rede de Pesquisa",
+        "ctr": 4.2,
+        "orçamento": 50.00
+    },
+    {
+        "nome": "Shopping - Canecas",
+        "tipo": "Shopping",
+        "ctr": 3.2,
+        "orçamento": 80.00
+    },
+    {
+        "nome": "Display - Presente Dia dos Pais",
+        "tipo": "Display",
+        "ctr": 3.4,
+        "orçamento": 120.00
+    },
+    {
+        "nome": "YouTube - Feriado Prolongado 7 de Setembro",
+        "tipo": "YouTube",
+        "ctr": 2.7,
+        "orçamento": 95.00
+    },
+    {
+        "nome": "Pesquisa - Concorrentes",
+        "tipo": "Rede de Pesquisa",
+        "ctr": 2.5,
+        "orçamento": 60.00
+    }
+]
